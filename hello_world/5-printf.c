@@ -5,7 +5,7 @@
  *	followed by a new line.
  *
  *
- * Return - Returns 0 at the end of the function.
+ * Return: returns 0 at the end of the function.
  */
 
 int main(void)
