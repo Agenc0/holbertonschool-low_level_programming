@@ -2,7 +2,7 @@
 
 /**
  * main - Prints with proper grammar, but the outcome is a piece of art,,
- * 	followed by a new line.
+ *	followed by a new line.
  *
  *
  * Return - Returns 0 at the end of the function.
