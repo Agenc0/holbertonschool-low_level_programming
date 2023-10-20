@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints the size of different datatypes in bytes, 
+ * main - prints the size of different datatypes in bytes,
  *	each in a new line
  *
  * Return: Returns 0 at the end of the function
