@@ -10,17 +10,15 @@
 
 int main(void)
 {
-	char lower = 'a';
-	char upper = 'A';
+	char lc = 'a';
+	char uc = 'A';
 
-	for (lower <= 'z'; lower++);
-	{
-		putchar(lower);
+	for (lc <= 'z'; lc++) {
+		putchar(lc);
 	}
 
-	for (upper <= 'Z'; upper++);
-	{
-		putchar(upper);
+	for (uc <= 'Z'; uc++) {
+		putchar(uc);
 	}
 
 	putchar('\n');
