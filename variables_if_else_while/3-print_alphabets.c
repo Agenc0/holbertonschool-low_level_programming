@@ -10,11 +10,14 @@
 
 int main(void)
 {
-	for (lc = 'a'; lc <= 'z'; lc++) {
+	char lc = 'a';
+	char uc = 'A';
+
+	for (; lc <= 'z'; lc++) {
 		putchar(lc);
 	}
 
-	for (uc = 'A'; uc  <= 'Z'; uc++) {
+	for (; uc  <= 'Z'; uc++) {
 		putchar(uc);
 	}
 
