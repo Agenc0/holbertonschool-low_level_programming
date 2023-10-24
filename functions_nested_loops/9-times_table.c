@@ -19,10 +19,10 @@ void times_table(void)
 
 		for (; multiplier <= 9; multiplier++)
 		{
+			int result = num * multiplier;
+
 			_putchar(',');
 			_putchar(' ');
-
-			int result = num * multiplier;
 
 			if (result <= 9)
 				_putchar(' ');
