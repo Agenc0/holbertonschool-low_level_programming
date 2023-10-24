@@ -3,6 +3,10 @@
 /**
  * add - adds two numbers from the input
  *
+ * @n1: first integer for the equation
+ *
+ * @n2: second integer for the equation
+ *
  * Return: the result of the equation
  */
 
