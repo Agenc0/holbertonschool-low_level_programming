@@ -3,4 +3,4 @@
  * contains declarations of functions, not their definition.
  */
 
-int _putchar(char c)
+int _putchar(char c);
