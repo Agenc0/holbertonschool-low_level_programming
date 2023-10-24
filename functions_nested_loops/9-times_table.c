@@ -10,7 +10,7 @@
 void times_table(void)
 {
 	int num = 0;
-	
+
 	for (; num <= 9; num++)
 	{
 		int multiplier = 1;
