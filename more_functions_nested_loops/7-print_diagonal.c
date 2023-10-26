@@ -9,7 +9,7 @@
  * Return: void
  */
 
-void print_diagional(int n)
+void print_diagonal(int n)
 {
 	if (n > 0)
 	{
