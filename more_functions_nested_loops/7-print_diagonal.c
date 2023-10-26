@@ -1,7 +1,12 @@
 #include "main.h"
 
 /**
+ * print_diagonal - prints a diagonal line
+ * (top left - bottom right) in a stair-like pattern
  *
+ * @n: number of diagonals to be printed
+ *
+ * Return: void
  */
 
 void print_diagional(int n)
@@ -23,5 +28,5 @@ void print_diagional(int n)
 		}
 	}
 
-	_putchar('\n')
+	_putchar('\n');
 }
