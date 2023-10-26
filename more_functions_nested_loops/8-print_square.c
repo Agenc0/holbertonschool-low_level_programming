@@ -13,11 +13,11 @@ void print_square(int size)
 {
 	if (size > 0)
 	{
-		int height;
+		int height = 0;
 
 		for (; height < size; height++)
 		{
-			int width;
+			int width = 0;
 			
 			for (; width < size; width++)
 				_putchar('#');
