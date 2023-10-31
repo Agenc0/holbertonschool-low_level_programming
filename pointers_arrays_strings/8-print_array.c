@@ -5,7 +5,7 @@
  * print_array - prints the inputted amount of values
  * from an array of integers
  *
- * @s: pointer to the array
+ * @a: pointer to the array
  *
  * @n: number of values to print
  *
@@ -19,6 +19,9 @@ void print_array(int *a, int n)
 	for (; var < n; var++)
 	{
 		printf("%d", a[var]);
+
+		if (var == n - 1)
+			break;
 
 		printf(", ");
 	}
