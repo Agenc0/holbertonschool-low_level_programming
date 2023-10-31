@@ -11,7 +11,7 @@
  * Return: a pointer to destination string
  */
 
-char *_strcpy(char *dest, const char *src)
+char *_strcpy(char *dest, char *src)
 {
 	int var = 0;
 
