@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * strcat - appends one string to another, overwriting
+ * *strcat - appends one string to another, overwriting
  * null byte from the first, adding one at the end
  *
  * @dest: string to append to
