@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *strcat - appends one string to another, overwriting
+ * _strcat - appends one string to another, overwriting
  * null byte from the first, adding one at the end
  *
  * @dest: string to append to
@@ -10,7 +10,7 @@
  * Return: appended string along with endind null byte.
  */
 
-char *strcat(char *dest, char *src)
+char *_strcat(char *dest, char *src)
 {
 	int var = 0;
 	int destlen = 0;
