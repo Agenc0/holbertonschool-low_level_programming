@@ -23,9 +23,9 @@ char *leet(char *str)
 			if (str[var1] == input[var2] || str[var1] == input[var2] - 32)
 				str[var1] = code[var2] + '0';
 		}
-		
+
 		var1++;
 	}
-	
+
 	return (str);
 }
