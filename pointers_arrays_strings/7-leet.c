@@ -12,17 +12,18 @@ char *leet(char *str)
 {
 	char input[] = {'a', 'e', 'o', 't', 'l'};
 	char code[] = {4, 3, 0, 7, 1};
-	int var = 0;
+	int var1 = 0;
+	int var2 = 0;
 
-	while (str[var])
+	while (str[var1])
 	{
-		for (; var < 5; var++)
+		for (; var2 < 5; var2++)
 		{
-			if (str[var] == input[var] || str[var] == input[var] - 32)
-				str[var] = code[var] + '0';
+			if (str[var1] == input[var2] || str[var1] == input[var2] - 32)
+				str[var1] = code[var2] + '0';
 		}
 		
-		var++;
+		var1++;
 	}
 	
 	return (str);
