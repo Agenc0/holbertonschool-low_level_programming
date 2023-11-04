@@ -18,18 +18,18 @@ char *cap_string(char *str)
 			var++;
 
 		if (str[var] - 1 == ' ' ||
-				str [var] - 1 == '\t' ||
-				str [var] - 1 == '\n' ||
-				str [var] - 1 == ',' ||
-				str [var] - 1 == ';' ||
-				str [var] - 1 == '.' ||
-				str [var] - 1 == '!' ||
-				str [var] - 1 == '?' ||
-				str [var] - 1 == '"' ||
-				str [var] - 1 == '(' ||
-				str [var] - 1 == ')' ||
-				str [var] - 1 == '{' ||
-				str [var] - 1 == '}' ||
+				str[var] - 1 == '\t' ||
+				str[var] - 1 == '\n' ||
+				str[var] - 1 == ',' ||
+				str[var] - 1 == ';' ||
+				str[var] - 1 == '.' ||
+				str[var] - 1 == '!' ||
+				str[var] - 1 == '?' ||
+				str[var] - 1 == '"' ||
+				str[var] - 1 == '(' ||
+				str[var] - 1 == ')' ||
+				str[var] - 1 == '{' ||
+				str[var] - 1 == '}' ||
 				var == 0)
 			str[var] -= 32;
 
