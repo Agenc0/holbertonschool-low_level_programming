@@ -18,7 +18,7 @@ void print_chessboard(char (*a)[8])
 
 		for (; var2 < 8; var2++)
 			_putchar(a[var1][var2]);
-		
+
 		_putchar('\n');
 	}
 }
