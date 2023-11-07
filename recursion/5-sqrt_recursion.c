@@ -19,7 +19,9 @@ int sqrtfinder(int n, int itr)
 	else if (n / itr == itr && (n % itr == 0))
 		return (itr);
 	else if (n > itr)
-		return (sqrtfinder(n, itr + 1))
+		return (sqrtfinder(n, itr + 1));
+
+	return (-1);
 }
 
 /**
@@ -30,7 +32,7 @@ int sqrtfinder(int n, int itr)
  * Return: square root of n, -1 if error
  */
 
-int _sqrt_recursion(int n);
+int _sqrt_recursion(int n)
 {
 	return (sqrtfinder(n, 1));
 }
