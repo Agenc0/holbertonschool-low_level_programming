@@ -2,7 +2,7 @@
 
 /**
  * main - prints the program's name
- * 
+ *
  * @argc: number of arguments given
  * @argv: array of pointers to strings (arguments)
  *
