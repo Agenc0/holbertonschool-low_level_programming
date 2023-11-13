@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 	int var = 1;
 	int sum = 0;
 
-	for (; i < argc; i++)
+	for (; var < argc; var++)
 	{
 		int var1 = 0;
 
