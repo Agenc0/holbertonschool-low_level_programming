@@ -17,7 +17,7 @@ char *create_array(unsigned int size, char c)
 	if (size > 0)
 		ptr = malloc(size);
 
-	if (p != NULL)
+	if (ptr != NULL)
 	{
 		unsigned int var = 0;
 
