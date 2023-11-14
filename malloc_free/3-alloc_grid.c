@@ -2,7 +2,8 @@
 #include <stdlib.h>
 
 /**
- * alloc_grid - creates a 2-dimensional array with all elements initialized to 0
+ * alloc_grid - creates a 2-dimensional array
+ * with all elements initialized to 0
  *
  * @width: # of columns
  * @height: # of rows
@@ -25,23 +26,27 @@ int **alloc_grid(int width, int height)
 
 	for (; var1 < height; var1++)
 	{
-		int var2 = 0;
-		int var3 = 0;
-
-		ptr = malloc(width * sizeof(int));
+		ptr[var1] = malloc(width * sizeof(int));
 
 		if (ptr[var1] == NULL)
 		{
-			for (; var2 < var1; var2++)
-				free(ptr[var2]);
+			for (; var1 >= 0; var1--)
+				free(ptr[var1]);
 
 			free(ptr);
 
 			return (NULL);
 		}
+	}
 
-		for (; var3 < width; var3++)
-			ptr[var1][var3] = 0;
+	var1 = 0;
+
+	for (; var1 < height; var1++)
+	{
+		int var2 = 0;
+
+		for (; var2 < width; var2++)
+			ptr[var1][var2] = 0;
 	}
 
 	return (ptr);
