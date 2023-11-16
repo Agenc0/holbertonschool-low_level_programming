@@ -14,9 +14,9 @@ unsigned int lenget(char *s)
 	unsigned int length = 0;
 
 	while (*s++)
-		len++;
+		length++;
 
-	return (len);
+	return (length);
 }
 
 /**
