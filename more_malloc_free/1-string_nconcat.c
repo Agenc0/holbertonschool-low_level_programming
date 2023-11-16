@@ -2,7 +2,26 @@
 #include <stdlib.h>
 
 /**
- * string_nconcat - concatenates a given number of bytes from one string to another
+ * lenget - get length of a string
+ *
+ * @s: string to get length of
+ *
+ * Return: string length
+ */
+
+unsigned int lenget(char *s)
+{
+	unsigned int length = 0;
+
+	while (*s++)
+		len++;
+
+	return (len);
+}
+
+/**
+ * string_nconcat - concatenates a given number of bytes
+ * from one string to another
  *
  * @s1: string to concatenate to
  * @s2: string to concatenate
@@ -14,8 +33,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *ptr;
-	unsigned int len = n;
-	unsigned int var = 0;
+	unsigned int var, len1 = 0, len2 = 0;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -23,21 +41,31 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-	for (; s1[var]; var++)
-		len++;
+	len1 = lenget(s1);
+	len2 = lenget(s2);
 
-	ptr = malloc(sizeof(char) * (len + 1));
+	if (n > len2)
+		n = len2;
+
+	ptr = malloc(len1 + n + 1);
 
 	if (ptr == NULL)
 		return (NULL);
 
-	len = 0;
+	for (var = 0; var < len1 + n; var++)
+	{
+		if (*s1)
+		{
+			ptr[var] = *s1;
+			s1++;
+		}
 
-	for (var = 0; s1[var]; var++)
-		ptr[len++] = s1[var];
-
-	for (var = 0; s2[var] && var < n; var++)
-		ptr[len++] = s2[var];
+		else
+		{
+			ptr[var] = *s2;
+			s2++;
+		}
+	}
 
 	ptr[var] = '\0';
 
