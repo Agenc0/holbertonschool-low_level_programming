@@ -19,7 +19,6 @@ void print_all(const char * const format, ...)
 	if (format)
 	{
 		va_start(args, format);
-
 		while (format[var])
 		{
 
@@ -36,24 +35,18 @@ void print_all(const char * const format, ...)
 					break;
 				case 's':
 					s = va_arg(args, char *);
-
 					if (!s)
 						s = "(nil)";
-
 					printf("%s%s", separator, s);
 					break;
 				default:
 					var++;
 					continue;
 			}
-
 			separator = ", ";
-
 			var++;
 		}
-
 		va_end(args);
 	}
-	
 	printf("\n");
 }
