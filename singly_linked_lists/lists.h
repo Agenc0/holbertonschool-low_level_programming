@@ -1,6 +1,8 @@
 #ifndef LISTS_H
 #define LISTS_H
 
+#include <stdlib.h>
+
 /**
  * strust list_s - singly linked list
  *
