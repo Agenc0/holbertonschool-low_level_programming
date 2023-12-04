@@ -4,7 +4,7 @@
  * insert_dnodeint_at_index - inserts a new node in a list
  * of type dlistint_t, at a specified position
  *
- * @head: pointer to head of list
+ * @h: pointer to head of list
  * @idx: position to insert new node at
  * @n: value to set to new node
  *
