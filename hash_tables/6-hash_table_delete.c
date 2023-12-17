@@ -8,7 +8,7 @@
  * Return: void
  */
 
-void hash_table_delete(const hash_table_t *ht)
+void hash_table_delete(hash_table_t *ht)
 {
 	hash_node_t node; tmp;
 	unsigned long int i;
@@ -29,7 +29,6 @@ void hash_table_delete(const hash_table_t *ht)
 			}
 		}
 	}
-
 	free(ht->array);
 	free(ht);
 }
