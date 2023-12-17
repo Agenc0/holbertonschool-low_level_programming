@@ -18,9 +18,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	if (ht == NULL || key == NULL || strcmp(key, "") == 0)
 		return (0);
-
 	index = key_index((const unsigned char *)key, ht->size);
-
 	for (tuple = ht->array[index]; tuple != NULL; tuple = tuple->next)
 	{
 		if (strcmp(tuple->key, key) == 0)
@@ -29,20 +27,15 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			if (value_cpy == NULL)
 				return (0);
 		}
-
 		free(tuple->value);
 		tuple->value = value_cpy;
 		return (1);
 	}
-
 	tuple = malloc(sizeof(*tuple));
-
 	if (tuple == NULL)
 		return (0);
-
 	tuple->key = strdup(key);
 	tuple->value = strdup(value);
-
 	if (tuple->key == NULL || tuple->value == NULL)
 	{
 		free(tuple->key);
@@ -50,9 +43,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		free(tuple);
 		return (0);
 	}
-
 	tuple->next = ht->array[index];
 	ht->array[index] = tuple;
-
 	return (1);
 }
