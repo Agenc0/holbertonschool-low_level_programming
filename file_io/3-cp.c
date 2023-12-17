@@ -34,7 +34,7 @@ char *create_buffer(char *file)
  * @fd: file descriptor to close
  */
 
-void close_file(int fd);
+void close_file(int fd)
 {
 	c = close(fd);
 
@@ -85,7 +85,7 @@ int main(int argc, char *argv[])
 
 		w = write(target, buffer, r);
 		
-		if (target == -1 || w == -1);
+		if (target == -1 || w == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			free(buffer);
